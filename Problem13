@@ -1,0 +1,1 @@
+SELECT CONCAT(p.FirstName, ' ', p.LastName) AS FullName, a.City, a.State FROM Person p JOIN Address a ON p.PersonID = a.PersonID;

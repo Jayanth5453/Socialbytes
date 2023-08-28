@@ -1,2 +1,0 @@
-SELECT id,month,SUM(salary) OVER (PARTITION BY id ORDER BY month ROWS BETWEEN 2 PRECEDING AND 1 PRECEDING) AS cumulative_sum
-FROM employee_salaryORDER BY id ASC, month DESC;
